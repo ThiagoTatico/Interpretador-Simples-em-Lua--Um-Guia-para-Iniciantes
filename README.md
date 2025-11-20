@@ -502,8 +502,8 @@ Para testar seu interpretador, você usará os arquivos JSON da AST que você fo
 .
 ├── main.lua          <-- Seu interpretador
 ├── json.lua          <-- Módulo JSON
-├── fib.rinha.json    <-- Arquivo de teste (AST)
-├── sum.rinha.json    <-- Arquivo de teste (AST)
+├── fib.uninter.json    <-- Arquivo de teste (AST)
+├── sum.uninter.json    <-- Arquivo de teste (AST)
 └── ...
 ```
 
