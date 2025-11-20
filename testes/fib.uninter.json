@@ -1,0 +1,223 @@
+{
+	"name": "testes/fib.uninter",
+	"expression": {
+		"kind": "Let",
+		"name": {
+			"text": "fib",
+			"location": {
+				"start": 4,
+				"end": 7,
+				"filename": "testes/fib.uninter"
+			}
+		},
+		"value": {
+			"kind": "Function",
+			"parameters": [
+				{
+					"text": "n",
+					"location": {
+						"start": 14,
+						"end": 15,
+						"filename": "testes/fib.uninter"
+					}
+				}
+			],
+			"value": {
+				"kind": "If",
+				"condition": {
+					"kind": "Binary",
+					"lhs": {
+						"kind": "Var",
+						"text": "n",
+						"location": {
+							"start": 27,
+							"end": 28,
+							"filename": "testes/fib.uninter"
+						}
+					},
+					"op": "Lt",
+					"rhs": {
+						"kind": "Int",
+						"value": 2,
+						"location": {
+							"start": 31,
+							"end": 32,
+							"filename": "testes/fib.uninter"
+						}
+					},
+					"location": {
+						"start": 27,
+						"end": 32,
+						"filename": "testes/fib.uninter"
+					}
+				},
+				"then": {
+					"kind": "Var",
+					"text": "n",
+					"location": {
+						"start": 38,
+						"end": 39,
+						"filename": "testes/fib.uninter"
+					}
+				},
+				"otherwise": {
+					"kind": "Binary",
+					"lhs": {
+						"kind": "Call",
+						"callee": {
+							"kind": "Var",
+							"text": "fib",
+							"location": {
+								"start": 52,
+								"end": 55,
+								"filename": "testes/fib.uninter"
+							}
+						},
+						"arguments": [
+							{
+								"kind": "Binary",
+								"lhs": {
+									"kind": "Var",
+									"text": "n",
+									"location": {
+										"start": 56,
+										"end": 57,
+										"filename": "testes/fib.uninter"
+									}
+								},
+								"op": "Sub",
+								"rhs": {
+									"kind": "Int",
+									"value": 1,
+									"location": {
+										"start": 60,
+										"end": 61,
+										"filename": "testes/fib.uninter"
+									}
+								},
+								"location": {
+									"start": 56,
+									"end": 61,
+									"filename": "testes/fib.uninter"
+								}
+							}
+						],
+						"location": {
+							"start": 52,
+							"end": 62,
+							"filename": "testes/fib.uninter"
+						}
+					},
+					"op": "Add",
+					"rhs": {
+						"kind": "Call",
+						"callee": {
+							"kind": "Var",
+							"text": "fib",
+							"location": {
+								"start": 65,
+								"end": 68,
+								"filename": "testes/fib.uninter"
+							}
+						},
+						"arguments": [
+							{
+								"kind": "Binary",
+								"lhs": {
+									"kind": "Var",
+									"text": "n",
+									"location": {
+										"start": 69,
+										"end": 70,
+										"filename": "testes/fib.uninter"
+									}
+								},
+								"op": "Sub",
+								"rhs": {
+									"kind": "Int",
+									"value": 2,
+									"location": {
+										"start": 73,
+										"end": 74,
+										"filename": "testes/fib.uninter"
+									}
+								},
+								"location": {
+									"start": 69,
+									"end": 74,
+									"filename": "testes/fib.uninter"
+								}
+							}
+						],
+						"location": {
+							"start": 65,
+							"end": 75,
+							"filename": "testes/fib.uninter"
+						}
+					},
+					"location": {
+						"start": 52,
+						"end": 75,
+						"filename": "testes/fib.uninter"
+					}
+				},
+				"location": {
+					"start": 23,
+					"end": 78,
+					"filename": "testes/fib.uninter"
+				}
+			},
+			"location": {
+				"start": 10,
+				"end": 80,
+				"filename": "testes/fib.uninter"
+			}
+		},
+		"next": {
+			"kind": "Print",
+			"value": {
+				"kind": "Call",
+				"callee": {
+					"kind": "Var",
+					"text": "fib",
+					"location": {
+						"start": 89,
+						"end": 92,
+						"filename": "testes/fib.uninter"
+					}
+				},
+				"arguments": [
+					{
+						"kind": "Int",
+						"value": 10,
+						"location": {
+							"start": 93,
+							"end": 95,
+							"filename": "testes/fib.uninter"
+						}
+					}
+				],
+				"location": {
+					"start": 89,
+					"end": 96,
+					"filename": "testes/fib.uninter"
+				}
+			},
+			"location": {
+				"start": 83,
+				"end": 97,
+				"filename": "testes/fib.uninter"
+			}
+		},
+		"location": {
+			"start": 0,
+			"end": 97,
+			"filename": "testes/fib.uninter"
+		}
+	},
+	"location": {
+		"start": 0,
+		"end": 97,
+		"filename": "testes/fib.uninter"
+	}
+}
